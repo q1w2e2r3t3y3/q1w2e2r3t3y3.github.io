@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<title>clicker</title>
+	</head>
+	
+	<body>
+		<h1 class="title" id="pagetitle">Clicker Game</h1>
+		
+		<div class="container">
+			
+			<div class="game">
+				<h1 class="title">Game</h1>
+				<h1>Score: <span class="variable" id="score-counter"></span></h1>
+				<h1>PPS: <span class="variable" id="pps-counter"></span></h1>
+				<h1>PPC: <span class="variable" id="ppc-counter"></span></h1>
+				<button type="button" id="clickerbutton" onclick="increaseScore()">Click</button>
+			</div>
+		
+			<div class="shop">
+				<h1 class="title">Shop</h1>
+				<ul>
+					
+					<li id="li0">
+						+1 pps. price: <span class="price" id="p0"></span> 
+						<button type="button" id="b0" onclick="buyPpsUpgrade(Price[0], 1, 0);">Purchase</button><br>
+						amount owned: 
+						<span class="variable" id="u0"></span>
+					</li>
+					
+					<li id="li1">
+						+1 ppc. price: <span class="price" id="p1"></span>
+						<button type="button" id="b1" onclick="buyPpcUpgrade(Price[1], 1, 1);">Purchase</button><br>
+						amount owned: 
+						<span class="variable" id="u1"></span>
+					</li>
+					
+					<li id="li2">
+						+10 pps. price: <span class="price" id="p2"></span> 
+						<button type="button" id="b2" onclick="buyPpsUpgrade(Price[2], 10, 2);">Purchase</button><br>
+						amount owned: 
+						<span class="variable" id="u2"></span>
+					</li>
+					
+					<li id="li3">
+						+10 ppc. price: <span class="price" id="p3"></span> 
+						<button type="button" id="b3" onclick="buyPpcUpgrade(Price[3], 10, 3);">Purchase</button><br>
+						amount owned: 
+						<span class="variable" id="u3"></span>
+					</li>
+					
+					<li id="li4">
+						+1000 pps. price: <span class="price" id="p4"></span> 
+						<button type="button" id="b4" onclick="buyPpsUpgrade(Price[4], 1000, 4);">Purchase</button><br>
+						amount owned: 
+						<span class="variable" id="u4"></span>
+					</li>
+					
+					<li id="li5">
+						+1000 ppc. price: <span class="price" id="p5"></span> 
+						<button type="button" id="b5" onclick="buyPpcUpgrade(Price[5], 1000, 5);">Purchase</button><br>
+						amount owned: 
+						<span class="variable" id="u5"></span>
+					</li>
+										
+				</ul>
+			</div>
+		
+		</div>
+		<div class="footer">
+			<a href="G:\My Drive\random code\Github\homepage\homepage.html">Home</a>
+		</div>
+		
+		
+		<script src="clicker.js"></script>
+		
+	</body>
+</html>
